@@ -8,5 +8,5 @@ import com.matic.vo.People;
 @WebService
 public interface CXFWeb {
 	
-	public boolean addPeople(People people);
+	public People addPeople(People people);
 }

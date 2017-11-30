@@ -5,13 +5,11 @@ import com.matic.vo.People;
 public class CXFWebImpl implements CXFWeb{
 	
 	@Override
-	public boolean addPeople(People people) {
-		boolean b = true;
-		if(people == null){
-			b = false;
-		}else{
-			System.out.println(people.getName());
-		}
-		return b;
+	public People addPeople(People people) {
+		System.out.println(people.getName());
+		people.setAge(23);
+		people.setName("阿三!");
+		people.setSex('0');
+		return people;
 	}
 }

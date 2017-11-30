@@ -50,7 +50,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		     + '</ser:Hello>'
 		  + '</soapenv:Body>'
 		+ '</soapenv:Envelope>';
-		alert(data);
 		xhr.send(data);
   	}
   	function back(){
